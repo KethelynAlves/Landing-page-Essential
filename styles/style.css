@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    border: none;
+    background-color: #86131B;
+    color: azure;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: ease-in 0.4s;
+    font-size: 1.5rem;
+
+    &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    &#botao-conhecer{
+        margin-top: 13px;
+    }
+}
+
+body{
+    background-color: #f9d8c3;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+
+
+    & header{
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 2rem;
+        width: 100%;
+        min-width: 4rem;
+        color: rgb(121, 45, 10);
+        padding: 1rem 4rem;
+        background: linear-gradient(to top,#3d1a0600,#f0c0a2); 
+
+        & .logo{
+            font-size: 3rem;
+        }
+
+        & nav, ul{
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+            padding: 0px;
+            
+            & a{
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: rgb(121, 45, 10);            
+            }
+            
+            & li{
+                transition: ease-in 0.4s;
+                
+                &:hover{
+                    text-decoration: underline;
+                    transform: scale(1.05);
+                    cursor: pointer;
+                }
+            }
+        } /*na ul */
+    }/* header */
+
+    & main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 4rem 2rem 4rem;
+        
+        & section{
+            
+        display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+        }
+        & h1{
+            font-size: 4.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        & article{
+            display: flex;
+            text-align: justify;
+            font-size: 2rem;
+            width: 50%;
+
+            color: #5e2b0c;
+        }
+
+        & aside, img{
+            border-radius: 10px;
+            height: 100%;
+        }
+
+    }/* main */
+}
