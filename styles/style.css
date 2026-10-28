@@ -21,12 +21,13 @@ body{
     & button{
     border: none;
     background-color: #86131B;
-    color: azure;
+    color: rgb(255, 245, 238);
     padding: 0.5rem 1rem;
     border-radius: 30px;
     transition: ease-in 0.4s;
     font-size: 1.5rem;
     font-family: "Lexend", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     &:hover{
         transform: scale(1.05);
@@ -49,7 +50,7 @@ body{
         width: 100%;
         min-width: 4rem;
         color: rgb(121, 45, 10);
-        padding: 1rem 4rem;
+        padding: 1rem 8rem;
         background: linear-gradient(to top,#3d1a0600,#f0c0a2); 
 
         & .logo{
@@ -66,16 +67,21 @@ body{
             & a{
                 font-size: 1.5rem;
                 text-decoration: none;
-                color: rgb(121, 45, 10);            
+                color: rgb(121, 45, 10);   
+                transition: ease-in 0.4s;
+                
+                &:hover{
+                    color: #421a1a;
+                    text-decoration: none;
+                    cursor: pointer;
+                }         
             }
             
             & li{
                 transition: ease-in 0.4s;
                 
                 &:hover{
-                    text-decoration: underline;
                     transform: scale(1.05);
-                    cursor: pointer;
                 }
             }
         } /*na ul */
@@ -86,7 +92,7 @@ body{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 2rem 4rem 2rem 4rem;
+        padding: 4rem 8rem 2rem 8rem;
         
         & section{
             display: flex;
@@ -97,21 +103,23 @@ body{
         & h1{
             font-size: 4.5rem;
             margin-bottom: 0.5rem;
+            color: #831A1A;
         }
 
         & article{
             display: flex;
             text-align: justify;
-            font-size: 2rem;
+            font-size: 1.7rem;
             width: 90%;
 
             color: #5e2b0c;
         }
 
         & aside, img{
-            border-radius: 10px;
-            height: 600px;
+            border-radius: 50px;
+            height: 550px;
             transition: ease-in 0.4s;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 
                 &:hover{
                     text-decoration: underline;
@@ -121,4 +129,39 @@ body{
         }
 
     }/* main */
+}
+
+footer{
+    background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 2rem;
+        width: 100%;
+        min-width: 4rem;
+        color: rgb(121, 45, 10);
+        font-size: 0.7rem;
+        padding: 8rem 8rem 1rem 8rem;
+        background: linear-gradient(to top,#f0c0a2, #3d1a0600); 
+        gap: 0.5rem;
+
+        & ul{
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+            padding: 0px;
+            
+            & a{
+                text-decoration: none;
+                color: rgb(121, 45, 10);   
+                transition: ease-in 0.4s;
+            
+            &:hover{
+                color: #421a1a;
+                text-decoration: none;
+                cursor: pointer;
+            }         
+        }
+    }
 }
