@@ -1,27 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lexend:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-button{
-    border: none;
-    background-color: #86131B;
-    color: azure;
-    padding: 0.5rem 1rem;
-    border-radius: 30px;
-    transition: ease-in 0.4s;
-    font-size: 1.5rem;
-
-    &:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    &#botao-conhecer{
-        margin-top: 13px;
-    }
-}
 
 body{
     background-color: #f9d8c3;
@@ -30,6 +16,28 @@ body{
     flex-wrap: wrap;
     align-items: center;
     min-height: 100vh;
+    font-family: "Lexend", sans-serif;
+
+    & button{
+    border: none;
+    background-color: #86131B;
+    color: azure;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: ease-in 0.4s;
+    font-size: 1.5rem;
+    font-family: "Lexend", sans-serif;
+
+    &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    &#botao-conhecer{
+        margin-top: 13px;
+        max-width: 29rem;
+    }
+    }
 
 
     & header{
@@ -46,6 +54,7 @@ body{
 
         & .logo{
             font-size: 3rem;
+            font-family: "Dela Gothic One", sans-serif;
         }
 
         & nav, ul{
@@ -80,10 +89,9 @@ body{
         padding: 2rem 4rem 2rem 4rem;
         
         & section{
-            
-        display: flex;
+            display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 5rem;
 
         }
         & h1{
@@ -95,14 +103,21 @@ body{
             display: flex;
             text-align: justify;
             font-size: 2rem;
-            width: 50%;
+            width: 90%;
 
             color: #5e2b0c;
         }
 
         & aside, img{
             border-radius: 10px;
-            height: 100%;
+            height: 600px;
+            transition: ease-in 0.4s;
+                
+                &:hover{
+                    text-decoration: underline;
+                    transform: scale(1.005);
+                    cursor: pointer;
+                }
         }
 
     }/* main */
